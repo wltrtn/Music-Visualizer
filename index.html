@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Music Visualizer</title>
+		<link rel="stylesheet" href="application.css" />
+	 </head>
+
+	  <body>
+		<audio id="song" src="./audio/leanon.mp3"></audio>
+		<div id="visualizer">
+			<div id="graph"></div>
+			<div>
+				<button onclick="document.getElementById('song').play()">Play</button>
+				<button onclick="document.getElementById('song').pause()">Pause</button>
+				<button onclick="document.getElementById('song').volume+=0.1">Volume +</button>
+				<button onclick="document.getElementById('song').volume-=0.1">Volume -</button>
+			</div>
+		</div>
+	    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	    <script src="app.js"></script>
+	  </body>
+</html>
